@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Room Selection</h1>
+        <img src="images/gctu-logo-story-768x461.jpg" alt="">
+        <p>Available rooms are based on current capacity. Please select a room type:</p>
+        <form id="roomForm" action="payment.html" method="GET">
+            <div>
+                <input type="radio" id="single" name="room" value="1">
+                <label for="single">one in a Room (3000gh)</label>
+                <span id="single-status" class="status"></span>
+            </div>
+            <div>
+                <input type="radio" id="double" name="room" value="2">
+                <label for="double">Two in a Room (2500gh)</label>
+                <span id="double-status" class="status"></span>
+            </div>
+            <div>
+                <input type="radio" id="triple" name="room" value="3">
+                <label for="triple">Three in a Room (2000gh)</label>
+                <span id="triple-status" class="status"></span>
+            </div>
+            <div>
+                <input type="radio" id="quadruple" name="room" value="4">
+                <label for="quadruple">Four in a Room (1500gh)</label>
+                <span id="quadruple-status" class="status"></span>
+            </div>
+            <a href="payment.html"><button type="submit" id="submit-btn">Next</button></a>
+        </form>
+        <div id="confirmation"></div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
